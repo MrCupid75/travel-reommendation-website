@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* VARIABLES */
+:root {
+  --primary-color: linear-gradient(to right, #034159, #038c3e);
+  --secondary-color: #038c3e;
+  --background-color: rgb(255, 244, 244);
+  --text-color: #ffffff;
+  --border-color: #034159;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #034159, #038c3e);
+  color: white;
+}
+
+nav svg {
+  width: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.rout-links {
+  display: flex;
+  gap: 90px;
+}
+
+.rout-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rout-links a:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px solid #fff;
+}
+
+.searchArea-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 19px;
+
+  background-color: var(--background-color);
+  padding: 5px 25px;
+
+  border-radius: 25px;
+}
+
+.searchArea-container input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--background-color);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.searchArea-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.searchArea-container button:hover {
+  transition: background 1s;
+  background: #034159;
+}
+
+/* HEADER */
+.header {
+  background-image: linear-gradient(
+      to left,
+      rgba(104, 245, 108, 0.019),
+      rgba(1, 42, 19, 0.874)
+    ),
+    url(images/island-3542290_1280.jpg);
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.header-content h1 {
+  color: var(--text-color);
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.header .social-media::before {
+  position: absolute;
+  top: -400px;
+  content: "";
+  width: 3px;
+  height: 250px;
+  background-color: white;
+}
+
+.header .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  position: absolute;
+  top: 450px;
+  left: 40px;
+}
+
+.header .social-media svg {
+  width: 30px;
+}
+
+.contact_form {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.346);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: var(--text-color);
+}
+
+.contact_form form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.346);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.contact_form form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.346);
+
+  font-size: 12px;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+}
+
+.contact_form form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
